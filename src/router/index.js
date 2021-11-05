@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/home/Home.vue'
 import ShopCar from '../views/shopcar/ShopCar.vue'
 import Main from '../views/main/Main.vue'
+import Detail from '../views/detail/Detail.vue'
 const routes = [
   {
     path: '/',
@@ -26,6 +27,10 @@ const routes = [
   {
     path: '/main',
     component: Main
+  },
+  {
+    path: '/detail/:spuId',
+    component: Detail
   },
 ]
 
